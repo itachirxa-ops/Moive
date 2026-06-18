@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wilmfime - Watch Trailers & Reviews</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="logo"><img src="download copy.jpg" alt=""></div>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Series</a></li>
+          <li><a href="#">My List</a></li>
+        </ul>
+      </nav>
+   <div class="search-box">
+  <input type="text" id="movieSearch" placeholder="Search movies..." />
+</div>
+<button class="btn-signin" id="btnSignIn" style="margin-left: 15px; padding: 8px 16px; background-color: #e50914; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Sign In</button>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Featured Movie: Interstellar</h1>
+        <p>
+          A team of explorers travel through a wormhole in space in an attempt
+          to ensure humanity's survival.
+        </p>
+        <button class="btn-play">▶ Play Trailer</button>
+        <button class="btn-info">ℹ More Info</button>
+      </div>
+      
+    </section>
+<section class="movie-section new-releases">
+  <h2>What's New on ZILK</h2>
+  <div class="movie-grid">
+    
+    <div class="movie-card new-badge" data-title="Monster House" data-rating="⭐ 8.5" data-desc="Three teenagers discover that their neighbor's house is actually a living, breathing, scary monster." data-video="https://www.youtube.com/watch?v=XIvVby6SIn8">
+      <img src="https://i.pinimg.com/1200x/23/75/4b/23754b0b1fc5d35c1ee3159ae7cf6acc.jpg" alt="Monster House" />
+      <div class="card-info">
+        <h3>Monster House</h3>
+        <span class="rating">⭐ 8.5</span>
+      </div>
+    </div>
+
+    <div class="movie-card new-badge" data-title="Turning Red" data-rating="⭐ 7.8" data-desc="A confident, dorky thirteen-year-old girl turns into a giant red panda whenever she gets too excited." data-video="https://www.youtube.com/watch?v=XdKzUbAiswE">
+      <img src="https://i.pinimg.com/736x/2f/8c/7e/2f8c7e73c4137c462154e9b06de030e8.jpg" alt="Turning Red" />
+      <div class="card-info">
+        <h3>Turning Red</h3>
+        <span class="rating">⭐ 7.8</span>
+      </div>
+    </div>
+
+    <div class="movie-card new-badge" data-title="Luca" data-rating="⭐ 8.1" data-desc="On the beautiful Italian Riviera, an unlikely but strong friendship grows between a human being and a disguised sea monster." data-video="https://www.youtube.com/watch?v=mYfJxlgR2jw">
+      <img src="https://i.pinimg.com/736x/4b/6c/7f/4b6c7f654c892bd811f03fed20050083.jpg" alt="Luca" />
+      <div class="card-info">
+        <h3>Luca</h3>
+        <span class="rating">⭐ 8.1</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- Movie Grid Section -->
+    <section class="movie-section">
+      <h2>Trending Now</h2>
+      <div class="movie-grid">
+        <!-- Movie Card 1 -->
+          <div class="movie-card" 
+     data-title="The Adventure Begins" 
+     data-rating="⭐ 8.5" 
+     data-desc="An epic journey across unknown lands where a young hero discovers an ancient secret." 
+     data-video="https://www.youtube.com/watch?v=dA3YGGGHouU"> <img src="https://i.pinimg.com/1200x/f6/19/39/f61939036e4687881676dba9861756ab.jpg" alt="Movie 1" />
+    <div class="card-info">
+    <h3>The Adventure Begins</h3>
+    <span class="rating">⭐ 8.5</span>
+  </div>
+</div>
+
+        <!-- Movie Card 2 -->
+     <div class="movie-card" 
+     data-title="ENCANTO SS2" 
+     data-rating="⭐ 8.5" 
+     data-desc="An epic journey across unknown lands where a young hero discovers an ancient secret." 
+     data-video="https://youtu.be/VDjbFWXz_bE"> <img src="https://i.pinimg.com/736x/86/27/2f/86272f6362119883ac667b24db75ca32.jpg"alt="Movie 1" />
+  <div class="card-info">
+    <h3>ENCANTO SS2</h3>
+    <span class="rating">⭐ 9.5</span>
+  </div>
+</div>
+      
+        <!-- Movie Card 3 -->
+               <div class="movie-card" 
+     data-title="ZOOTOPIA" 
+     data-rating="⭐ 8.5" 
+     data-desc="An epic journey across unknown lands where a young hero discovers an ancient secret." 
+     data-video="https://youtu.be/HfEVEGf1A8Q"> <img src="https://i.pinimg.com/1200x/c9/c1/cc/c9c1cc9ea31132b52327e8fc51eea6f1.jpg" alt="Movie 1" />
+    <div class="card-info">
+    <h3>ZOOTOPIA</h3>
+    <span class="rating">⭐ 8.5</span>
+  </div>
+</div>
+  
+        <!-- Movie Card 4 -->
+               <div class="movie-card" 
+     data-title="Monster house" 
+     data-rating="⭐ 8.5" 
+     data-desc="An epic journey across unknown lands where a young hero discovers an ancient secret." 
+     data-video="https://www.youtube.com/watch?v=dA3YGGGHouU"> <img src="https://i.pinimg.com/736x/94/01/65/94016516f9b98c580a7c7a142bf2e777.jpg" alt="Movie 1" />
+    <div class="card-info">
+    <h3>MONSTER HOUSE</h3>
+    <span class="rating">⭐ 8.5</span>
+  </div>
+</div>
+        
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/1200x/d3/10/47/d310471309d565384c68e1ce1992ea4c.jpg"
+            alt="Movie 4"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+          
+      </div>
+        <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/1200x/23/75/4b/23754b0b1fc5d35c1ee3159ae7cf6acc.jpg"
+            alt="Movie 6"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/1200x/0c/3c/b9/0c3cb9ffd2fc0fd5b93ed3e111f892c6.jpg"
+            alt="Movie 7"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/1200x/82/73/93/82739318363598a058af841e1ceb9406.jpg"
+            alt="Movie 8"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/92/2a/70/922a70e6a129644df8731ac3840789a9.jpg"
+            alt="Movie 9"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/91/c2/e5/91c2e549f0b6a085a3974c455b14661b.jpg"
+            alt="Movie 10"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/e2/13/8e/e2138e605f9d18fd3c98afe65d209404.jpg"
+            alt="Movie 11"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/5d/01/47/5d014709c2c909370f6a5e24e56e05ad.jpg"
+            alt="Movie 12"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/1200x/30/ad/6d/30ad6db8408c4b5223cece284cfd316c.jpg"
+            alt="Movie 13"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img src="https://i.pinimg.com/736x/dc/cf/28/dccf285dd23f5b4f9deda5e06a3016ca.jpg"
+            alt="Movie 14"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/d5/41/26/d541269feb4ec440e6e7299e3f53d43e.jpg"
+            alt="Movie 15"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/2f/8c/7e/2f8c7e73c4137c462154e9b06de030e8.jpg"
+            alt="Movie 16"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/4b/6c/7f/4b6c7f654c892bd811f03fed20050083.jpg"
+            alt="Movie 17"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/e8/52/93/e852930a46a4fb443755f62d8ab11a44.jpg"
+            alt="Movie 18"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/5b/79/de/5b79dedf23d199076993890c0ee6d560.jpg"
+            alt="Movie 19"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/736x/0a/fa/84/0afa84b6393d82d8c7ee6f9f1a08173f.jpg"
+            alt="Movie 20"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+          <div class="movie-card">
+          <img
+            src="https://i.pinimg.com/1200x/f1/d3/ae/f1d3aec327db7abaa558f39966917bdd.jpg"
+            alt="Movie 21"
+          />
+          <div class="card-info">
+            <h3>Midnight Mystery</h3>
+            <span class="rating">⭐ 8.2</span>
+          </div>
+        </div>
+     
+        
+    </section>
+    <section class="movie-section new-releases">
+ 
+  <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        
+        <h2 id="modalTitle">Movie Title</h2>
+        <p id="modalRating" class="modal-rating">⭐ 0.0</p>
+        <p id="modalDesc">Movie summary details text goes here...</p>
+        
+        <div id="videoContainer" style="display: none; margin-bottom: 20px;">
+          <iframe id="modalVideo" width="100%" height="280" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <button class="btn-watch-now" id="btnWatchNow">▶ Watch Now</button>
+      </div>
+    </div>
+<section class="movie-section" id="myListSection" style="display: none; border-bottom: 1px solid #333; padding-bottom: 30px;">
+  <h2>My Watchlist</h2>
+  <div class="movie-grid" id="myListGrid">
+    </div>
+</section>
+    <footer>
+      <p>&copy; 2026 LARA filmwave cinema</p>
+    </footer>
+    <div id="loginModal" class="modal">
+  <div class="modal-content" style="max-width: 360px; text-align: center;">
+    <span class="close-login-btn" id="closeLogin" style="position: absolute; right: 20px; top: 15px; font-size: 28px; cursor: pointer; color: #bbb;">&times;</span>
+    <h2 style="margin-bottom: 20px; font-size: 26px;">Sign In</h2>
+    
+    <form id="loginForm" style="display: flex; flex-direction: column; gap: 15px;">
+      <input type="text" id="usernameInput" placeholder="Email or Username" required style="padding: 12px; background: #333; border: 1px solid #444; color: white; border-radius: 4px;" />
+      <input type="password" id="passwordInput" placeholder="Password" required style="padding: 12px; background: #333; border: 1px solid #444; color: white; border-radius: 4px;" />
+      <button type="submit" style="padding: 12px; background: #e50914; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 16px;">Sign In</button>
+    </form>
+  </div>
+</div>
+
+    <script src="brain.js"></script>
+  </body>
+</html>
