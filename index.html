@@ -22,49 +22,84 @@
   <input type="text" id="movieSearch" placeholder="Search movies..." />
 </div>
 <button class="btn-signin" id="btnSignIn" style="margin-left: 15px; padding: 8px 16px; background-color: #e50914; color: white; border: none; border-radius: 4px; font-weight: bold; cursor: pointer;">Sign In</button>
+<!-- Put this right next to your Sign In button in the header -->
+<div class="theme-switch-wrapper" style="margin-left: 15px; display: flex; align-items: center; gap: 8px;">
+  <span style="font-size: 14px; color: #fff;" id="themeLabel">🌙 Dark</span>
+  <label class="switch" style="position: relative; display: inline-block; width: 44px; height: 22px;">
+    <input type="checkbox" id="themeCheckbox" style="opacity: 0; width: 0; height: 0;">
+    <span class="slider" style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #333; transition: .3s; border-radius: 22px; border: 1px solid #555;"></span>
+  </label>
+</div>
     </header>
 
     <!-- Hero Banner -->
-    <section class="hero">
+ <section class="hero-container">
+  <div class="hero-slider" id="heroSlider">
+    
+    <div class="hero-slide active" style="background-image: linear-gradient(to top, #111, rgba(17,17,17,0.3)), url('image.png');">
       <div class="hero-content">
         <h1>Featured Movie: Interstellar</h1>
-        <p>
-          A team of explorers travel through a wormhole in space in an attempt
-          to ensure humanity's survival.
-        </p>
-        <button class="btn-play">▶ Play Trailer</button>
-        <button class="btn-info">ℹ More Info</button>
+        <p>A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+        <button class="btn-play" onclick="openSliderTrailer('dA3YGGGHouU')">▶ Play Trailer</button>
       </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: linear-gradient(to top, #111, rgba(17,17,17,0.3)), url('img1.png');">
+      <div class="hero-content">
+        <h1>Featured Movie: Encanto</h1>
+        <p>A young Colombian girl has to face the frustration of being the only member of her family without magical powers.</p>
+        <button class="btn-play" onclick="openSliderTrailer('dV7u9R2BB9A')">▶ Play Trailer</button>
+      </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: linear-gradient(to top, #111, rgba(17,17,17,0.3)), url('img2.png');">
+      <div class="hero-content">
+        <h1>Featured Movie: Zootopia</h1>
+        <p>In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.</p>
+        <button class="btn-play" onclick="openSliderTrailer('Kbbvt8H2S-M')">▶ Play Trailer</button>
+      </div>
+    </div>
+
+  </div>
+</section>
       
     </section>
 <section class="movie-section new-releases">
-  <h2>What's New on ZILK</h2>
+  <h2>What's New on LARA filmwave</h2>
   <div class="movie-grid">
     
     <div class="movie-card new-badge" data-title="Monster House" data-rating="⭐ 8.5" data-desc="Three teenagers discover that their neighbor's house is actually a living, breathing, scary monster." data-video="https://www.youtube.com/watch?v=XIvVby6SIn8">
-      <img src="https://i.pinimg.com/1200x/23/75/4b/23754b0b1fc5d35c1ee3159ae7cf6acc.jpg" alt="Monster House" />
+      <img src="https://i.pinimg.com/736x/b4/26/46/b426461100defd41f31ef327d8373183.jpg" alt="Monster House" />
       <div class="card-info">
-        <h3>Monster House</h3>
+        <h3>If whis could kill</h3>
         <span class="rating">⭐ 8.5</span>
       </div>
     </div>
 
     <div class="movie-card new-badge" data-title="Turning Red" data-rating="⭐ 7.8" data-desc="A confident, dorky thirteen-year-old girl turns into a giant red panda whenever she gets too excited." data-video="https://www.youtube.com/watch?v=XdKzUbAiswE">
-      <img src="https://i.pinimg.com/736x/2f/8c/7e/2f8c7e73c4137c462154e9b06de030e8.jpg" alt="Turning Red" />
+      <img src="https://i.pinimg.com/1200x/be/8b/65/be8b65b26d6ecf8e83c45bd81215a361.jpg" alt="Turning Red" />
       <div class="card-info">
-        <h3>Turning Red</h3>
+        <h3>Girls High School Mystery Class 3</h3>
         <span class="rating">⭐ 7.8</span>
       </div>
     </div>
 
     <div class="movie-card new-badge" data-title="Luca" data-rating="⭐ 8.1" data-desc="On the beautiful Italian Riviera, an unlikely but strong friendship grows between a human being and a disguised sea monster." data-video="https://www.youtube.com/watch?v=mYfJxlgR2jw">
-      <img src="https://i.pinimg.com/736x/4b/6c/7f/4b6c7f654c892bd811f03fed20050083.jpg" alt="Luca" />
+      <img src="https://i.pinimg.com/736x/49/b8/ff/49b8ffed688a9d6c19144ba20f9aa45c.jpg" alt="Luca" />
       <div class="card-info">
         <h3>Luca</h3>
         <span class="rating">⭐ 8.1</span>
       </div>
     </div>
-
+    
+    <div class="movie-card new-badge" data-title="Luca" data-rating="⭐ 8.1" data-desc="On the beautiful Italian Riviera, an unlikely but strong friendship grows between a human being and a disguised sea monster." data-video="https://www.youtube.com/watch?v=mYfJxlgR2jw">
+      <img src="https://i.pinimg.com/736x/46/e2/99/46e299a53de2a415f1a5fed27f0d8b0e.jpg" alt="Luca" />
+      <div class="card-info">
+        <h3>Colony</h3>
+        <span class="rating">⭐ 8.1</span>
+      </div>
+    </div>
+    
   </div>
 </section>
     <!-- Movie Grid Section -->
